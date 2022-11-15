@@ -1,0 +1,42 @@
+.bg-white{background: #EBF5F7 ;}
+.bg-teal, .btn-bg-teal{background: #5BB0BA!important;}
+.bg-honeysuckle, .btn-bg-honey{background: #C15B78!important;}
+.bg-rose{background: #F6C8CC;}
+
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+.bg-featured-blog {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+}
+
+.navbar {
+    background: #c15b78!important;
+}
+
+#features {
+    color: #EBF5F7;
+}
+
+.feat-header {
+    text-align: center;
+    padding-bottom: 1em;
+}
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
