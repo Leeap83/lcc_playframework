@@ -1,8 +1,16 @@
-.bg-white{background: #EBF5F7 ;}
-.bg-teal, .btn-bg-teal{background: #5BB0BA!important;}
-.bg-honeysuckle, .btn-bg-honey{background: #C15B78!important;}
-.bg-rose{background: #F6C8CC;}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Signika+Negative:wght@400;500;600;700&display=swap');
+.bg-white{background: #f6eee9 ;}
+.bg-teal, .btn-bg-teal{background: #ddacbb!important;}
+.bg-honeysuckle, .btn-bg-honey{background: #858cbb!important;}
+.bg-rose{background: #586186;}
+.text-purple {color: #5a6186!important;}
+.text-light-purple {color: #858cbb;}
+.fa-bars {color: #586186;}
+a {
+  text-decoration: none;
+}
 
+.nav-link {font-size: 1.2em;}
 
 .feature {
   display: inline-flex;
@@ -22,12 +30,12 @@
   min-height: 15rem;
 }
 
-.navbar {
-    background: #c15b78!important;
-}
-
 #features {
     color: #EBF5F7;
+}
+
+.feature a {
+  color: #EBF5F7;
 }
 
 .feat-header {
@@ -39,4 +47,93 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     padding: 1em;
+    text-align: center;
+}
+
+
+.navbar {
+    background: #ddacbb!important;
+}
+
+.navbar-brand {
+  margin-right: 0!important;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 1.8em;
+}
+.menu-category {
+  padding-top: 1em;
+}
+
+.hero-container h1 {
+  font-family: "Dancing Script", sans-serif;
+  color: #586186;
+  font-size: 3.5em;
+}
+.category a{
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.d-grid a {
+  color: #EBF5F7;
+}
+
+.category a {
+  color: #586186;
+}
+
+.fa.fa-facebook-official {
+  color: #858cbb;
+}
+
+.g-recaptcha {
+  transform: scale(0.79);
+  transform-origin: 0 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+video
+{
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .d-grid {
+    display: grid; grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 3em;
+  }
+  .feat-item {
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  .mauto {
+    margin: 0 auto!important;
+  }
+
+  .img-grid {
+    grid-area: 1;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-container h1 {
+    font-size: 3em;
+  }
+
+  .navbar-brand {
+    font-size: 1.3em;
+  }
 }
