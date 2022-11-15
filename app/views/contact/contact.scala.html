@@ -1,6 +1,6 @@
 @main("Contact Us"){
 <section class="py-5">
-    <div class="container px-5">
+    <div class="container px-md-5">
         <!-- Contact form-->
         <div class="rounded-3 py-5 px-4 px-md-5 mb-5">
             <div class="text-center mb-5">
@@ -8,60 +8,32 @@
                 <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
             </div>
             <div class="row gx-5 justify-content-center">
-                <div class=" bg-teal p-4 col-lg-8 col-xl-6">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class=" bg-honeysuckle rounded p-4 col-lg-8 col-xl-6">
+                    <form action="https://formspree.io/f/xjvzjjvy" method="POST">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
                             <label for="name">Full name</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="" data-sb-validations="required,email" />
+                            <input class="form-control" id="email" type="email" name="email" placeholder="" required />
                             <label for="email">Email address</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
+
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                             <label for="message">Message</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <div class="g-recaptcha mb-3" data-sitekey="6LdCefIiAAAAAIn6tJuZXxSmm2IMl2njzh2AxApq"></div>
                         <!-- Submit Button-->
                         <div class="text-center te">
-                            <button class="btn btn-bg-honey btn-lg" id="submitButton" type="submit">Submit</button>
+                            <button class="btn btn-bg-teal btn-lg text-purple" id="submitButton" type="submit">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -69,27 +41,44 @@
         </div>
         <!-- Contact cards-->
         <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
-            <div class="col">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-chat-dots"></i></div>
+            <div class="col feat-item">
+                <div class="feature bg-rose bg-gradient text-white rounded-3 mb-3">
+                    <a href="https://www.facebook.com/people/The-Little-Country-Crafts/100077572592231/" target="_blank">
+                        <i class="fa fa-lg fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
                 <div class="h5 mb-2">FaceBook</div>
                 <p class="text-muted mb-0">We regularly post on facebook, visit our page.</p>
             </div>
-            <div class="col">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-people"></i></div>
+            <div class="col feat-item">
+                <div class="feature bg-rose bg-gradient text-white rounded-3 mb-3">
+                    <a href="mailto:leeap83@@gmail.com" target="_blank">
+                        <i class="fa fa-lg fa-envelope"></i>
+                    </a>
+                </div>
                 <div class="h5">Email</div>
                 <p class="text-muted mb-0">We are happy to hear from you, send us a email.</p>
             </div>
-            <div class="col">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
+            <div class="col feat-item">
+                <div class="feature bg-rose bg-gradient text-white rounded-3 mb-3">
+                    <a href="tel:0123456789">
+                        <i class="fa fa-lg fa-phone" aria-hidden="true"></i>
+                    </a>
+                </div>
                 <div class="h5">Call us</div>
                 <p class="text-muted mb-0">You can give us a call during our business hours.</p>
             </div>
-            <div class="col">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-circle"></i></div>
+            <div class="col feat-item">
+                <div class="feature bg-rose bg-gradient text-white rounded-3 mb-3">
+                    <a href="@routes.FAQController.init()">
+                        <i class="fa fa-lg fa-question" aria-hidden="true"></i>
+                    </a>
+                </div>
                 <div class="h5">Questions?</div>
                 <p class="text-muted mb-0">Not sure? See our FAQ's for recently asked questions.</p>
             </div>
         </div>
     </div>
 </section>
+
 }
